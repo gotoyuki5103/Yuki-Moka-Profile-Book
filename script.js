@@ -219,25 +219,7 @@ function initTabs(tabSelector, contentSelector) {
     });
 }
 
-function initGalleryObserver() {
-    const gallerySection = document.getElementById('gallery');
-    if (!gallerySection) return;
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const activeTab = document.querySelector('#gallery .tab-btn.active');
-                if (activeTab && activeTab.getAttribute('data-target') === 'memories-content') {
-                    if (memoriesSlider) memoriesSlider.focus();
-                } else if (activeTab && activeTab.getAttribute('data-target') === 'preshoot-content') {
-                    if (preshootSlider) preshootSlider.focus();
-                }
-            }
-        });
-    }, { threshold: 0.1 });
-
-    observer.observe(gallerySection);
-}
+// Gallery auto-scroll observers removed to prevent scroll jank
 
 function initModals() {
     const menuModal = document.getElementById('menuModal');
@@ -313,7 +295,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initModals();
     initSliders().then(() => {
-        initTabs('#biography .tab-btn', '.bio-content');
         initTabs('#gallery .tab-btn', '.gallery-panel');
 
         const initialGalleryTab = document.querySelector('#gallery .tab-btn[data-target="memories-content"]');
@@ -321,7 +302,5 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const initialGalleryContent = document.getElementById('memories-content');
         if (initialGalleryContent) initialGalleryContent.classList.add('active');
-
-        initGalleryObserver();
     });
 });

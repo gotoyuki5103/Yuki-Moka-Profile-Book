@@ -61,8 +61,8 @@
                 <div class="profile-content" style="text-align: left; width: 100%;">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; font-family: var(--font-en); font-size: 0.95rem; letter-spacing: 0.05em; border-bottom: 1px solid var(--accent-light); padding-bottom: 15px;">
                         <div>
-                            <div style="margin-bottom: 5px;"><span style="color: var(--accent-color); display: inline-block; width: 90px;">BIRTHDAY</span>1998.11.23</div>
-                            <div style="margin-bottom: 5px;"><span style="color: var(--accent-color); display: inline-block; width: 90px;">BLOODTYPE</span>B</div>
+                            <div style="display: flex; align-items: flex-start; margin-bottom: 5px;"><span style="color: var(--accent-color); width: 85px; flex-shrink: 0;">BIRTHDAY</span><span>1998.11.23</span></div>
+                            <div style="display: flex; align-items: flex-start; margin-bottom: 5px;"><span style="color: var(--accent-color); width: 85px; flex-shrink: 0;">BLOODTYPE</span><span>B</span></div>
                         </div>
                         <div style="text-align: right;">
                             <div style="color: var(--accent-color); margin-bottom: 5px;">MBTI</div>
@@ -112,8 +112,8 @@
                 <div class="profile-content" style="text-align: left; width: 100%;">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 25px; font-family: var(--font-en); font-size: 0.95rem; letter-spacing: 0.05em; border-bottom: 1px solid var(--accent-light); padding-bottom: 15px;">
                         <div>
-                            <div style="margin-bottom: 5px;"><span style="color: var(--accent-color); display: inline-block; width: 90px;">BIRTHDAY</span>1999.07.23</div>
-                            <div style="margin-bottom: 5px;"><span style="color: var(--accent-color); display: inline-block; width: 90px;">BLOODTYPE</span>A</div>
+                            <div style="display: flex; align-items: flex-start; margin-bottom: 5px;"><span style="color: var(--accent-color); width: 85px; flex-shrink: 0;">BIRTHDAY</span><span>1999.07.23</span></div>
+                            <div style="display: flex; align-items: flex-start; margin-bottom: 5px;"><span style="color: var(--accent-color); width: 85px; flex-shrink: 0;">BLOODTYPE</span><span>A</span></div>
                         </div>
                         <div style="text-align: right;">
                             <div style="color: var(--accent-color); margin-bottom: 5px;">MBTI</div>
@@ -424,9 +424,85 @@
 
     <section class="container fade-in" id="seating-chart">
         <h2 class="section-title">Seating Chart</h2>
-        <div class="seating-chart-area">
-            <img src="images/SeatingChart.jpg" alt="席次表" id="seatingChartImg" loading="lazy">
-            <p>※画像をタップすると拡大表示されます。</p>
+        <div class="seating-chart-area" style="background: #fff; padding: 30px 15px; border-radius: 8px; box-shadow: var(--shadow-light); border: 1px solid rgba(197, 180, 163, 0.2); overflow-x: auto;">
+            <div style="min-width: 500px; padding-bottom: 10px;"> <!-- 横スクロール可能に -->
+                <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+                    <h3 style="font-family: var(--font-en); font-size: 1.8rem; color: #432e22; margin: 0; font-style: italic;">Seating List</h3>
+                    <div style="display: flex; gap: 30px; text-align: center; color: #432e22;">
+                        <div>
+                            <div style="font-family: var(--font-en); font-size: 0.8rem; letter-spacing: 0.1em;">GROOM</div>
+                            <div style="font-size: 1rem; margin-top: 5px;">勇樹</div>
+                        </div>
+                        <div>
+                            <div style="font-family: var(--font-en); font-size: 0.8rem; letter-spacing: 0.1em;">BRIDE</div>
+                            <div style="font-size: 1rem; margin-top: 5px;">杏芽</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: center; gap: 20px;">
+                    <!-- テーブル1 -->
+                    <div style="display: flex; gap: 10px;">
+                        <div style="display: flex; flex-direction: column; gap: 15px; text-align: center; width: 100px;">
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎新婦友人</div><div style="font-size: 0.85rem; color: #333;">中里海斗 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎新婦友人</div><div style="font-size: 0.85rem; color: #333;">村松猛士 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎新婦友人</div><div style="font-size: 0.85rem; color: #333;">助川京輔 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎新婦友人</div><div style="font-size: 0.85rem; color: #333;">木村純基 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎友人</div><div style="font-size: 0.85rem; color: #333;">岡亮太 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎友人</div><div style="font-size: 0.85rem; color: #333;">塩澤郁哉 様</div></div>
+                            <div style="height: 30px;"></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎祖母</div><div style="font-size: 0.85rem; color: #333;">佐々木イサヲ 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎母</div><div style="font-size: 0.85rem; color: #333;">後藤美智子</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎父</div><div style="font-size: 0.85rem; color: #333;">後藤俊二</div></div>
+                        </div>
+                        <div style="width: 40px; background: #624330; border-radius: 2px;"></div>
+                        <div style="display: flex; flex-direction: column; gap: 15px; text-align: center; width: 100px;">
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎新婦友人</div><div style="font-size: 0.85rem; color: #333;">伊藤綾花 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎新婦友人</div><div style="font-size: 0.85rem; color: #333;">大久保怜 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎新婦友人</div><div style="font-size: 0.85rem; color: #333;">宮下亜築 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎友人</div><div style="font-size: 0.85rem; color: #333;">白神遼太 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎友人</div><div style="font-size: 0.85rem; color: #333;">濱中汰帥 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎友人</div><div style="font-size: 0.85rem; color: #333;">小野颯斗 様</div></div>
+                            <div style="height: 10px;"></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎伯父</div><div style="font-size: 0.85rem; color: #333;">藤澤俊郎 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎伯母</div><div style="font-size: 0.85rem; color: #333;">藤澤久美子 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎姉</div><div style="font-size: 0.85rem; color: #333;">樫田佑美 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎義兄</div><div style="font-size: 0.85rem; color: #333;">樫田啓吾 様</div></div>
+                        </div>
+                    </div>
+
+                    <!-- テーブル2 -->
+                    <div style="display: flex; gap: 10px;">
+                        <div style="display: flex; flex-direction: column; gap: 15px; text-align: center; width: 100px;">
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦友人</div><div style="font-size: 0.85rem; color: #333;">今井真帆 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦友人</div><div style="font-size: 0.85rem; color: #333;">野澤真子 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦友人</div><div style="font-size: 0.85rem; color: #333;">山田茉由 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦友人</div><div style="font-size: 0.85rem; color: #333;">新井花菜 様</div></div>
+                            <div style="height: 60px;"></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦伯父</div><div style="font-size: 0.85rem; color: #333;">大場正利 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦伯母</div><div style="font-size: 0.85rem; color: #333;">大場薫 様</div></div>
+                            <div style="height: 10px;"></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦祖母</div><div style="font-size: 0.85rem; color: #333;">石井喜美枝 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦姉</div><div style="font-size: 0.85rem; color: #333;">上岡寧々 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦義兄</div><div style="font-size: 0.85rem; color: #333;">上岡靖範 様</div></div>
+                        </div>
+                        <div style="width: 40px; background: #624330; border-radius: 2px;"></div>
+                        <div style="display: flex; flex-direction: column; gap: 15px; text-align: center; width: 100px;">
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦友人</div><div style="font-size: 0.85rem; color: #333;">三ヅ井天音 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新郎新婦友人</div><div style="font-size: 0.85rem; color: #333;">八並龍 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦友人</div><div style="font-size: 0.85rem; color: #333;">青鹿なな子 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦友人</div><div style="font-size: 0.85rem; color: #333;">小山陽香 様</div></div>
+                            <div style="height: 100px;"></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦大叔母</div><div style="font-size: 0.85rem; color: #333;">笠井三枝 様</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦大叔母</div><div style="font-size: 0.85rem; color: #333;">石井和子 様</div></div>
+                            <div style="height: 10px;"></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦弟</div><div style="font-size: 0.85rem; color: #333;">石井玖虎</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦母</div><div style="font-size: 0.85rem; color: #333;">石井貴美恵</div></div>
+                            <div><div style="font-size: 0.6rem; color: #888;">新婦父</div><div style="font-size: 0.85rem; color: #333;">石井淳一</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
