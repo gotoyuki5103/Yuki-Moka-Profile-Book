@@ -331,47 +331,58 @@
     <section class="container fade-in" id="menu">
         <h2 class="section-title">Menu</h2>
         
-        <div class="menu-card">
-            <h3 class="menu-category">Food Course</h3>
-            <ul class="menu-list-items">
-                <li>
-                    <span class="dish-name">Amuse-Bouche</span>
-                    <span class="dish-desc">とうもろこしと雲丹　〜香るクネル〜</span>
-                </li>
-                <li>
-                    <span class="dish-name">Hors-d'œuvre</span>
-                    <span class="dish-desc">鮎の磯辺揚げ<br>枝豆と白餡のアンクルート<br>真鯛の握り寿司<br>トマトのムース<br>鴨生ハムのクレープ巻き</span>
-                </li>
-                <li>
-                    <span class="dish-name">Entrée</span>
-                    <span class="dish-desc">米茄子の鴫炊き<br>合鴨ロースの醤油煮　葱の香り</span>
-                </li>
-                <li>
-                    <span class="dish-name">Poisson</span>
-                    <span class="dish-desc">カナダ産オマール海老<br>西京味噌焼き　ミックスリーフ添え</span>
-                </li>
-                <li>
-                    <span class="dish-name">Viande</span>
-                    <span class="dish-desc">国産牛サーロインステーキ<br>出汁醤油　山葵</span>
-                </li>
-                <li>
-                    <span class="dish-name">Riz</span>
-                    <span class="dish-desc">鰻カラスミ茶漬け</span>
-                </li>
-                <li>
-                    <span class="dish-name">Dessert</span>
-                    <span class="dish-desc">パッションフルーツとココナッツのムース<br>桃とローズのジュレ　ヨーグルトソルベ<br>コーヒー 又は 紅茶</span>
-                </li>
-            </ul>
+        <div class="bio-tabs">
+            <button class="tab-btn active" data-target="food-content">Food</button>
+            <button class="tab-btn" data-target="drink-content">Drink</button>
         </div>
 
-        <div class="menu-card mt-30">
-            <h3 class="menu-category">Drink</h3>
-            <div class="drink-list">
-                <p style="font-weight: 500; margin-bottom: 5px; color: var(--accent-color);">Alcohol</p>
-                <p style="font-size: 0.85rem; line-height: 1.6;">ワイン（白・赤・ロゼ） / ビール / ノンアルコールビール / ウイスキー / 焼酎（麦・芋） / 日本酒 / 季節のカクテル 2種</p>
-                <p style="font-weight: 500; margin-bottom: 5px; margin-top: 20px; color: var(--accent-color);">Soft Drink</p>
-                <p style="font-size: 0.85rem; line-height: 1.6;">ホテル椿山荘東京オリジナル フルーツハーブティー / オレンジジュース / 烏龍茶 / コーラ / ジンジャーエール / ペリエ / グリーンティー・マスカット / エルダーフラワーソーダ / モクテル（ストロベリースプモーニ・オーザフトショーレ）</p>
+        <div class="gallery-content">
+            <div id="food-content" class="gallery-panel active">
+                <div class="menu-card" style="box-shadow: none; border: none; padding: 0; margin-top: 0;">
+                    <h3 class="menu-category">Food Course</h3>
+                    <ul class="menu-list-items">
+                        <li>
+                            <span class="dish-name">Amuse-Bouche</span>
+                            <span class="dish-desc">とうもろこしと雲丹　〜香るクネル〜</span>
+                        </li>
+                        <li>
+                            <span class="dish-name">Hors-d'œuvre</span>
+                            <span class="dish-desc">鮎の磯辺揚げ<br>枝豆と白餡のアンクルート<br>真鯛の握り寿司<br>トマトのムース<br>鴨生ハムのクレープ巻き</span>
+                        </li>
+                        <li>
+                            <span class="dish-name">Entrée</span>
+                            <span class="dish-desc">米茄子の鴫炊き<br>合鴨ロースの醤油煮　葱の香り</span>
+                        </li>
+                        <li>
+                            <span class="dish-name">Poisson</span>
+                            <span class="dish-desc">カナダ産オマール海老<br>西京味噌焼き　ミックスリーフ添え</span>
+                        </li>
+                        <li>
+                            <span class="dish-name">Viande</span>
+                            <span class="dish-desc">国産牛サーロインステーキ<br>出汁醤油　山葵</span>
+                        </li>
+                        <li>
+                            <span class="dish-name">Riz</span>
+                            <span class="dish-desc">鰻カラスミ茶漬け</span>
+                        </li>
+                        <li>
+                            <span class="dish-name">Dessert</span>
+                            <span class="dish-desc">パッションフルーツとココナッツのムース<br>桃とローズのジュレ　ヨーグルトソルベ<br>コーヒー 又は 紅茶</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="drink-content" class="gallery-panel">
+                <div class="menu-card" style="box-shadow: none; border: none; padding: 0; margin-top: 0;">
+                    <h3 class="menu-category">Drink</h3>
+                    <div class="drink-list">
+                        <p style="font-weight: 500; margin-bottom: 5px; color: var(--accent-color);">Alcohol</p>
+                        <p style="font-size: 0.85rem; line-height: 1.6;">ワイン（白・赤・ロゼ） / ビール / ノンアルコールビール / ウイスキー / 焼酎（麦・芋） / 日本酒 / 季節のカクテル 2種</p>
+                        <p style="font-weight: 500; margin-bottom: 5px; margin-top: 20px; color: var(--accent-color);">Soft Drink</p>
+                        <p style="font-size: 0.85rem; line-height: 1.6;">ホテル椿山荘東京オリジナル フルーツハーブティー / オレンジジュース / 烏龍茶 / コーラ / ジンジャーエール / ペリエ / グリーンティー・マスカット / エルダーフラワーソーダ / モクテル（ストロベリースプモーニ・オーザフトショーレ）</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -393,11 +404,12 @@
         <h2 class="section-title">Gallery</h2>
 
         <div class="bio-tabs">
-            <button class="tab-btn active" data-target="memories-content">Memories</button>
-            <button class="tab-btn" data-target="preshoot-content">Pre-shoot</button>
+            <!-- <button class="tab-btn active" data-target="memories-content">Memories</button> -->
+            <button class="tab-btn active" data-target="preshoot-content">Pre-shoot</button>
         </div>
 
         <div class="gallery-content">
+            <!-- 思い出写真は一時的にオフ（後で復元できるようにコメントアウトで保持）
             <div id="memories-content" class="gallery-panel active">
                 <h3 class="gallery-subtitle"># Memories</h3>
                 <div class="slideshow-container" id="slideshow" role="region" aria-label="思い出の写真スライドショー">
@@ -408,8 +420,9 @@
                     <div class="thumbnail-list"></div>
                 </div>
             </div>
+            -->
 
-            <div id="preshoot-content" class="gallery-panel">
+            <div id="preshoot-content" class="gallery-panel active">
                 <h3 class="gallery-subtitle"># Pre-shoot</h3>
                 <div class="slideshow-container" id="slideshowPre" role="region" aria-label="前撮り写真スライドショー">
                     <button class="prev-arrow" onclick="plusSlidesPre(-1)" aria-label="前の写真">&#10094;</button>

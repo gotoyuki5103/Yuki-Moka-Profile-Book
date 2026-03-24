@@ -233,11 +233,13 @@ function initModals() {
         document.body.style.overflow = 'hidden';
     };
 
-    seatingChartImg.onclick = () => {
-        imgModal.classList.add('is-active');
-        expandedImg.src = seatingChartImg.src;
-        document.body.style.overflow = 'hidden';
-    };
+    if (seatingChartImg) {
+        seatingChartImg.onclick = () => {
+            imgModal.classList.add('is-active');
+            expandedImg.src = seatingChartImg.src;
+            document.body.style.overflow = 'hidden';
+        };
+    }
 
     document.querySelectorAll('.modal .close-btn').forEach(btn => {
         btn.onclick = function() {
@@ -296,11 +298,12 @@ document.addEventListener('DOMContentLoaded', () => {
     initModals();
     initSliders().then(() => {
         initTabs('#gallery .tab-btn', '.gallery-panel');
+        initTabs('#menu .tab-btn', '.gallery-panel');
 
-        const initialGalleryTab = document.querySelector('#gallery .tab-btn[data-target="memories-content"]');
+        const initialGalleryTab = document.querySelector('#gallery .tab-btn[data-target="preshoot-content"]');
         if (initialGalleryTab) initialGalleryTab.classList.add('active');
         
-        const initialGalleryContent = document.getElementById('memories-content');
+        const initialGalleryContent = document.getElementById('preshoot-content');
         if (initialGalleryContent) initialGalleryContent.classList.add('active');
     });
 });
